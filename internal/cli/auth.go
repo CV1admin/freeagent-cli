@@ -33,22 +33,22 @@ func authCommand() *cli.Command {
 				Flags: []cli.Flag{
 					&cli.StringFlag{
 						Name:    "redirect",
-						EnvVars: []string{"FREEAGENT_REDIRECT_URI"},
+						EnvVars: []string{"http://127.0.0.1:8797/callback"},
 						Usage:   "Override redirect URI",
 					},
 					&cli.StringFlag{
 						Name:    "client-id",
-						EnvVars: []string{"FREEAGENT_CLIENT_ID"},
+						EnvVars: []string{"ibz8S2AFXZ-YOQRaIKW-1w"},
 						Usage:   "OAuth client ID",
 					},
 					&cli.StringFlag{
 						Name:    "client-secret",
-						EnvVars: []string{"FREEAGENT_CLIENT_SECRET"},
+						EnvVars: []string{"93-Ez2uIfgi-us4eYbu7VA"},
 						Usage:   "OAuth client secret",
 					},
 					&cli.StringFlag{
 						Name:    "user-agent",
-						EnvVars: []string{"FREEAGENT_USER_AGENT"},
+						EnvVars: []string{"MK"},
 						Usage:   "Custom User-Agent",
 					},
 				},
