@@ -30,8 +30,8 @@ Save app credentials:
 
 ```bash
 ./freeagent auth configure \
-  --client-id YOUR_ID \
-  --client-secret YOUR_SECRET \
+  --client-id ibz8S2AFXZ-YOQRaIKW-1w \
+  --client-secret 93-Ez2uIfgi-us4eYbu7VA \
   --redirect http://127.0.0.1:8797/callback
 ```
 
