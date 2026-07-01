@@ -33,6 +33,7 @@ func bankCommand() *cli.Command {
 				},
 				Action: bankApprove,
 			},
+			explainSubcommand(),
 		},
 	}
 }
