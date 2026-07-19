@@ -7,6 +7,7 @@ A small CLI for the FreeAgent API, built in Go.
 - OAuth login (local callback or manual paste)
 - Keychain-backed token storage with file fallback
 - Create and send invoices
+- Explain (categorize) bank transactions and attach receipts
 - Break-glass `raw` command for any FreeAgent endpoint
 - JSON output mode for scripting / agents
 
@@ -115,6 +116,22 @@ Bank transactions (bulk approve):
 ./freeagent bank approve --ids ./transaction-ids.txt
 ./freeagent bank approve --ids ./explanation-ids.txt --ids-type explanation
 ```
+
+Explain (categorize) a transaction and optionally attach a receipt:
+
+```bash
+./freeagent bank explain \
+  --transaction BANK_TRANSACTION_ID \
+  --dated-on 2025-01-15 \
+  --gross-value -6.17 \
+  --category CATEGORY_ID \
+  --description "AWS EMEA" \
+  --attach ./receipt.pdf
+```
+
+`--gross-value` is passed through verbatim (negative for money out). Attachments
+must be png, jpg, jpeg, gif or pdf and at most 5MB; the content type is detected
+from the file extension, or override it with `--content-type`.
 
 ## Files
 
