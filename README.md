@@ -31,8 +31,8 @@ Save app credentials:
 
 ```bash
 ./freeagent auth configure \
-  --client-id ibz8S2AFXZ-YOQRaIKW-1w \
-  --client-secret 93-Ez2uIfgi-us4eYbu7VA \
+  --client-id YOUR_ID \
+  --client-secret YOUR_SECRET \
   --redirect http://127.0.0.1:8797/callback
 ```
 
@@ -41,8 +41,11 @@ You can also use env vars:
 ```bash
 export FREEAGENT_CLIENT_ID=...
 export FREEAGENT_CLIENT_SECRET=...
+export FREEAGENT_USER_AGENT=your-app-name
 export FREEAGENT_REDIRECT_URI=http://127.0.0.1:8797/callback
 ```
+
+> **Security:** Never commit OAuth client secrets. If a secret is exposed, revoke and rotate it immediately.
 
 ## Login
 
