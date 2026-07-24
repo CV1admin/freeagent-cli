@@ -39,9 +39,9 @@ Save app credentials:
 You can also use env vars:
 
 ```bash
-export FREEAGENT_CLIENT_ID= 0001
-export FREEAGENT_CLIENT_SECRET= 0001
-export FREEAGENT_USER_AGENT= MirrorMe
+export FREEAGENT_CLIENT_ID=0001
+export FREEAGENT_CLIENT_SECRET=0001
+export FREEAGENT_USER_AGENT=MirrorMe
 export FREEAGENT_REDIRECT_URI=http://127.0.0.1:8797/callback
 ```
 
